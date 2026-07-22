@@ -1,29 +1,83 @@
-faça um readme para esse projeto import javax.swing.*;
+# GUI Simples em Java Swing
 
-void main() {
-    JFrame frame = new JFrame("GUI DO EDUARDO");
+Este projeto é uma aplicação simples desenvolvida em **Java Swing** que demonstra a criação de uma interface gráfica com um campo de texto, um botão e um rótulo.
 
-    frame.setSize(300, 150);
-    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    frame.setLayout(null);
+## 📋 Funcionalidades
 
-    frame.setVisible(true);
+- Campo de texto para inserir um nome.
+- Botão **"Clique Aqui"**.
+- Exibição de uma saudação personalizada após clicar no botão.
 
-    JTextField textField = new JTextField();
-    textField.setBounds(20, 20, 150, 25);
+### Exemplo
 
-    JButton button = new JButton("Clique Aqui");
-    button.setBounds(180, 20, 90, 25);
+Antes de clicar:
 
-    JLabel label = new JLabel("Olá!");
-    label.setBounds(20, 60, 250, 25);
+```
+Olá!
+```
 
-    frame.add(textField);
-    frame.add(button);
-    frame.add(label);
+Após digitar `Eduardo` e clicar no botão:
 
-    button.addActionListener(e -> {
-        String name = textField.getText();
-        label.setText("Olá, " + name + "!");
-    });
-}
+```
+Olá, Eduardo!
+```
+
+## 🛠️ Tecnologias Utilizadas
+
+- Java
+- Java Swing
+
+## 📂 Estrutura
+
+O projeto contém:
+
+- `JFrame` para a janela principal.
+- `JTextField` para entrada de texto.
+- `JButton` para acionar o evento.
+- `JLabel` para exibir a mensagem.
+- `ActionListener` para atualizar a saudação.
+
+## ▶️ Como Executar
+
+### Pré-requisitos
+
+- Java JDK 21 ou superior (compatível com o uso de `void main()`).
+
+### Passos
+
+1. Clone este repositório:
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+
+2. Entre na pasta do projeto:
+
+```bash
+cd seu-repositorio
+```
+
+3. Execute o arquivo Java utilizando uma IDE compatível (como IntelliJ IDEA ou VS Code com extensão Java) ou pelo terminal.
+
+## 📸 Funcionamento
+
+1. Digite um nome no campo de texto.
+2. Clique no botão **"Clique Aqui"**.
+3. A mensagem será atualizada para:
+
+```
+Olá, NomeDigitado!
+```
+
+## 🎯 Objetivo
+
+Este projeto foi criado para demonstrar conceitos básicos de interfaces gráficas em Java utilizando a biblioteca Swing, incluindo:
+
+- Criação de janelas.
+- Posicionamento de componentes.
+- Manipulação de eventos.
+- Atualização dinâmica da interface.
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Eduardo**.
